@@ -1,0 +1,77 @@
+.ReactTabs {
+  height: calc(100% - 64px);
+  font-size: 14px;
+  overflow: auto;
+
+  &__TabList {
+    height: 44px;
+    margin: 0 0 20px !important;
+    padding: 0 20px !important;
+    border: none !important;
+    background-color: #fafafa;
+    box-shadow: 0 1px 0 0 #d6dee1;
+  }
+
+  &__Tab {
+    height: 100%;
+    border: none;
+    color: #657d8a;
+    line-height: 30px;
+
+    &--selected {
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-bottom: 2px solid #82b1ff !important;
+      color: #82b1ff !important;
+      background-color: transparent !important;
+    }
+  }
+
+  &__TabPanel {
+    padding: 0 10px;
+
+    .listPage {
+      margin-bottom: 20px;
+
+      .listTitle {
+        height: 28px;
+        padding: 0 10px;
+        border-bottom: 1px solid #cfd8dc;
+        box-shadow: none;
+        line-height: 28px;
+        color: #657d8a;
+        background-color: transparent;
+      }
+
+      .listTable {
+
+        table {
+          thead {
+            border: none;
+
+            tr {
+              box-shadow: 0 1px 0 0 #d6dee1;
+
+              td {
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              box-shadow: 0 1px 0 0 #eceff1;
+              color: #435b67;
+              background-color: #fff;
+
+              &:nth-child(odd) {
+                background-color: #fafafa;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

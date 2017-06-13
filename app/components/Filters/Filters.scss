@@ -1,0 +1,46 @@
+.filters {
+  display: flex;
+
+  .filters-toggle-button {
+    border: 1px solid #cfd8dc;
+    background-color: #fff;
+    padding: 7px 10px 10px 10px;
+    color: #435b67;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-right: 12px;
+
+    svg {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    span {
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    &.toggled {
+      background-color: #F0F0F0;
+    }
+  }
+
+  .selects {
+    display: flex;
+
+    .Select {
+      flex: 1 0 auto;
+      width: 160px;
+      margin-right: 12px;
+      font-size: 12px;
+
+      &-control {
+        background-color: transparent;
+      }
+
+      &-placeholder {
+        color: #546E7A;
+      }
+    }
+  }
+}

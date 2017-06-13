@@ -1,0 +1,1 @@
+export const TOGGLE_SEARCH_TAB = 'TOGGLE_SEARCH_TAB';

@@ -1,0 +1,190 @@
+.importPage {
+  .titleBlock {
+    display: table;
+    width: 100%;
+    height: 64px;
+    background-color: #fafafa;
+    box-shadow: 0 1px 0 0 #d6dee1;
+
+    .titleBlockLeft {
+      width: 50%;
+      display: table-cell;
+      padding: 0 11px;
+      line-height: 64px;
+      font-size: 20px;
+      color: #435b67;
+      text-transform: uppercase;
+
+      .fa {
+        color: #b0bec5;
+      }
+
+      span {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .mainContainer {
+    margin: 47px 32px 10px 32px;
+    display: table;
+
+    .uploadBlock {
+      display: table-cell;
+      width: 470px;
+      border-right: 1px solid #b5c3c9;
+
+      h3 {
+        font-size: 18px;
+        color: #546e7a;
+        padding-bottom: 20px;
+        height: auto;
+      }
+
+      .chooseButton {
+        height: 21px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: solid 1px #cfd8dc;
+        font-size: 12px;
+        color: #435b67;
+        line-height: 19px;
+
+        &:hover {
+          background-color: #f1f1f1;
+          cursor: pointer;
+        }
+      }
+
+      .chooseSpan {
+        font-size: 16px;
+        color: #748993;
+        padding-left: 4px;
+      }
+
+      .chooseDesc {
+        font-size: 12px;
+        padding: 5px;
+        color: #b0bec5;
+      }
+
+      .download {
+        padding: 37px 0 68px 17px;
+
+        .downloadSample {
+          font-size: 15px;
+          color: #175fc7;
+
+          &:hover {
+            color: #8147c7;
+          }
+        }
+      }
+
+      .buttonsBlock {
+        .cancel {
+          width: 85px;
+          height: 35px;
+          line-height: 34px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: solid 1px #cfd8dc;
+          font-size: 14px;
+          color: #435b67;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #f1f1f1;
+          }
+        }
+
+        .upload {
+          width: 80px;
+          height: 35px;
+          line-height: 34px;
+          border-radius: 4px;
+          background-color: #82b1ff;
+          margin-left: 10px;
+          border: none;
+          font-size: 14px;
+          color: #fff;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #7caaf7;
+          }
+        }
+      }
+    }
+
+    .importantNotesBlock {
+      margin-left: 23px;
+
+      h3 {
+        font-size: 18px;
+        color: #617984;
+      }
+
+      li {
+        font-size: 16px;
+        color: #546e7a;
+        padding-top: 15px;
+
+        &:before {
+          content: '- ';
+        }
+      }
+    }
+  }
+
+  .loadingStatus {
+    margin-top: 30px;
+
+    i {
+      font-size: 32px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    & > div {
+      display: inline-block;
+      vertical-align: middle;
+
+      h4 {
+        font-size: 14px;
+      }
+
+      div {
+        margin-top: 5px;
+        color: #546e7a;
+      }
+    }
+
+  }
+  
+  .loadingBlocker {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: table;
+    color: #fff;
+    font-size: 40px;
+
+    .table-row {
+      display: table-row;
+
+      .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+
+        svg {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

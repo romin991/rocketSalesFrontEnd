@@ -1,0 +1,52 @@
+TODO:
+Algolia clear event might be trigger prior the async dispatch from Algolia, hence the search data is not cleared
+
+Ticket:
+Onclick freeze button (Modal&Convert)
+Modal does not block entire page
+Change to date instead of datetimefield For Task Modal
+babel polyfill Error
+
+Milestone 3 leftover:
+Edit
+Right block on Task/Meeting
+Profile Picture
+Css for account detail page
+
+Milestone 4:
+Dashboard and side bar Revamp
+Modal header revamp
+Deal detail page
+Import page(Lead, Account, Contact)
+Change icon and logo (Including login page)
+Subscription
+
+Fix Meeting modal, required field(red)
+
+Bug List:
+Not directly save in Setting
+UI still execute when the call is bad
+Prof pic on note
+Dashboard remove vertical line
+Dashboard Lead graph on small size
+
+s3-deploy './dist/**' --cwd './dist/' --region ap-southeast-1 --bucket dev.app.zahaya.com
+
+s3-deploy './dist/**' --cwd './dist/' --region ap-southeast-1 --bucket app.zahaya.com
+
+export PIPELINE_ENV='production'
+
+https://github.com/react-ga/react-ga
+
+TODO List:
+High:
+Required css on First Name and Last Name
+Closed Won does not update revenue
+React Redux boiler plate title on app.zahaya.com
+
+Medium:
+Create contact in account no autocomplete
+Auto refresh account detail
+
+Low:
+Modal not entire page

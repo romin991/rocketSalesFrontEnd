@@ -1,0 +1,9 @@
+export const IMPORT_FILE = 'IMPORT_FILE';
+
+export const IMPORT_FILE_SUCCESS = 'IMPORT_FILE_SUCCESS';
+
+export const IMPORT_FILE_ERROR = 'IMPORT_FILE_ERROR';
+
+export const CLEAR_INPUT_FILE = 'CLEAR_INPUT_FILE';
+
+export const RESET_STATE = 'RESET_STATE';

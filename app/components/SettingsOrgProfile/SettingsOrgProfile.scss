@@ -1,0 +1,187 @@
+.orgProfile {
+  .mainContainer {
+    display: table;
+
+    .rightBlock {
+      vertical-align: top;
+      display: table-cell;
+      min-width: calc(100% - 250px);
+      border-left: 1px solid #d9e0e3;
+      padding-right: 30px;
+
+      .photoBlock {
+        float: left;
+        padding: 30px;
+
+        .photo {
+          width: 150px;
+          height: 150px;
+          border-radius: 34px;
+          text-align: center;
+          color: #fff;
+          line-height: 150px;
+          font-size: 50px;
+          background-color: #ff7043;
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 0 rgba(255, 255, 255, 0.65);
+        }
+
+        .uploadPhotoButton {
+          display: block;
+          line-height: 35px;
+          margin: 20px 5px;
+          width: 135px;
+          height: 35px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: solid 1px #cfd8dc;
+          text-align: center;
+
+          &:hover, &:active {
+            background-color: #fafafa;
+            cursor: pointer;
+          }
+
+          .fa {
+            font-size: 20px;
+            color: #b0bec5;
+            vertical-align: middle;
+          }
+
+          span {
+            padding: 0 0 0 10px;
+            font-size: 12px;
+            color: #435b67;
+          }
+        }
+      }
+
+      .informationBlock {
+        padding: 30px 0;
+        width: calc(100% - 210px);
+        max-width: 700px;
+        float: left;
+
+        table {
+          width: 100%;
+          margin: 0 40px 0 0;
+
+          thead {
+            font-size: 15px;
+            line-height: 1.93;
+            color: #175fc7;
+
+            .buttonData {
+              text-align: right;
+              float: right;
+            }
+
+            td {
+              padding: 0 0 20px 0;
+            }
+
+            button {
+              margin: 0 0 0 10px;
+              padding: 0 11px;
+              height: 35px;
+              border-radius: 4px;
+              background-color: #ffffff;
+              border: solid 1px #cfd8dc;
+
+              &:hover {
+                cursor: pointer;
+                background-color: #fafafa;
+              }
+
+              .fa {
+                font-size: 15px;
+                color: #cfd8dc;
+              }
+
+              span {
+                padding: 0 0 0 10px;
+                font-size: 14px;
+                color: #435b67;
+              }
+            }
+          }
+
+          tbody {
+
+            .labelData {
+              width: 25%;
+            }
+
+            label {
+              font-size: 14px;
+              line-height: 1.21;
+              color: #7e939e;
+            }
+
+            input {
+              width: 100%;
+              margin: 0 0 10px 0;
+              height: 34px;
+              padding: 10px;
+              box-sizing: border-box;
+              border-radius: 4px;
+              background-color: #ffffff;
+              border: solid 1px #cfd8dc;
+              font-size: 14px;
+              line-height: 1.21;
+              color: #4e6a78;
+
+              &:hover, &:focus, &:active {
+                border: solid 1px #82b1ff;
+                outline: none;
+              }
+              
+              &:disabled {
+                background-color: #eee;
+
+                &:hover {
+                  border: solid 1px #cfd8dc;
+                }
+              }
+            }
+
+            .buttons {
+              text-align: right;
+              padding: 10px 0 0 0;
+
+              .cancel {
+                height: 35px;
+                border-radius: 4px;
+                padding: 0 21px;
+                background-color: #ffffff;
+                border: solid 1px #cfd8dc;
+                font-size: 14px;
+                color: #435b67;
+
+                &:hover {
+                  background-color: #fafafa;
+                  cursor: pointer;
+                }
+              }
+
+              .save {
+                margin: 0 0 0 10px;
+                height: 35px;
+                border-radius: 4px;
+                padding: 0 20px;
+                background-color: #82b1ff;
+                border: none;
+                font-size: 14px;
+                color: #fff;
+
+                &:hover {
+                  background-color: #789fea;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

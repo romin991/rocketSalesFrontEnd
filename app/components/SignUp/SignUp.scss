@@ -1,0 +1,165 @@
+.signUpPage {
+  min-height: 100vh;
+  background-image: url('bg.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: table;
+  text-align: center;
+  width: 100%;
+
+  .error {
+    margin-bottom: 10px;
+  }
+
+  .signUpContainer {
+    display: table-cell;
+    vertical-align: middle;
+
+    .signUpBlock {
+      margin: 30px auto;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+      max-width: 960px;
+      text-align: left;
+
+      .rightPartSignUpBlock {
+        width: 50%;
+        float: left;
+        height: 100%;
+
+        .signUpInsideBlock {
+          padding: 60px;
+
+          h3 {
+            margin: 25px 0 15px 0;
+            font-size: 20px;
+            text-align: center;
+            color: #82b1ff;
+          }
+
+          .formBlock {
+            .longInput {
+              margin: 5px 0;
+              padding: 0 0 0 10px;
+              box-sizing: border-box;
+              width: 95%;
+              height: 40px;
+              border-radius: 4px;
+              background-color: #ffffff;
+              border: solid 1px #cfd8dc;
+
+              &:hover, &:focus, &:active {
+                border: 1px solid #82b1ff;
+                outline: none;
+              }
+            }
+
+            .checkboxBlock {
+              display: inline-block;
+              margin: 10px 0;
+              font-size: 14px;
+              color: #364851;
+
+              input {
+                vertical-align: bottom;
+                margin:0 8px 0 5px;
+                border-radius: 4px;
+                background-color: #ffffff;
+                border: solid 1px #cfd8dc;
+              }
+            }
+
+            .registerInput {
+              background-color: #82b1ff;
+              border: none;
+              color: #fff;
+
+              &:hover {
+                background-color: #7485FF;
+                border: none;
+                cursor: pointer;
+              }
+
+              &:disabled {
+                background-color: #888;
+              }
+            }
+          }
+
+          .clickForLogin {
+            display: inline-block;
+            margin: 0px 0;
+            font-size: 13px;
+            color: #364851;
+            margin-top: 12px;
+          }
+
+        }
+      }
+
+      .leftPartSignUpBlock {
+        width: 50%;
+        height: 100%;
+        background-image: url('./signup.jpg');
+        -webkit-background-size:cover;
+        background-size:cover;
+        border-radius: 4px 0 0 4px;
+        float: left;
+
+        img {
+          margin:188px 0 0 37px;
+        }
+
+        p {
+          margin: 30px 0 0 37px;
+          font-size: 26px;
+          line-height: 1.38;
+          letter-spacing: -0.6px;
+          color: #ffffff;
+        }
+
+        .copyrightBlock {
+          margin: 213px 0 15px 0;
+          opacity: 0.7;
+          font-size: 12px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+//For small devices
+
+@media (max-width: 960px) {
+
+  .signUpPage {
+    .signUpContainer {
+      .signUpBlock {
+        width: 95%;
+        display: block;
+
+        .rightPartSignUpBlock {
+          display: block;
+          float: none;
+          width: 100%;
+
+          .signUpInsideBlock {
+            .formBlock {
+              .longInput {
+                width: 98%;
+              }
+            }
+          }
+        }
+
+        .leftPartSignUpBlock {
+          display: none;
+          width: 0;
+        }
+      }
+    }
+  }
+}

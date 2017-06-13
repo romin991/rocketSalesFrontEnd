@@ -1,0 +1,26 @@
+.loading-element {
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: -20px;
+    top: -2px;
+    vertical-align: bottom;
+  }
+}
+
+.photoLoading {
+  svg {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+  }
+}
+
+.orgPhotoLoading {
+  svg {
+    position: absolute;
+    left: -10px;
+    top: 65px;
+  }
+}

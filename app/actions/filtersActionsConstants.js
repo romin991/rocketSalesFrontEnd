@@ -1,0 +1,3 @@
+export const TOGGLE_FILTERS = 'TOGGLE_FILTERS';
+
+export const CHANGE_VALUE = 'CHANGE_VALUE';

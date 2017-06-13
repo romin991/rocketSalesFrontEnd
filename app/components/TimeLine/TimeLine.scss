@@ -1,0 +1,99 @@
+.timeLine {
+  ul {
+    position: relative;
+
+    .vLine {
+      position: absolute;
+      height: 100%;
+      overflow: hidden;
+      border: 1px solid #cfd8dc;
+      border-radius: 8px;
+      left: 53px;
+    }
+
+    li {
+      padding: 0 0 20px 0;
+      display: table;
+      position: relative;
+
+      .dateBlock {
+        display: table-cell;
+      }
+
+      .month, .day {
+        width: 27px;
+        font-size: 14px;
+        line-height: 1.57;
+        text-align: center;
+        color: #7e939e;
+      }
+
+      .dateLine {
+        width: 60px;
+        border-bottom: solid 1px #cfd8dc;
+      }
+
+      .descriptionBlock {
+        display: table-cell;
+        position: relative;
+        margin: 8px 16px;
+        top: 17px;
+        left: 17px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: -3px;
+          top: 10px;
+          width: 6px;
+          height: 6px;
+          border: solid 1px #cfd8dc;
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+          background-color: #fff;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: 1px;
+          width: 10px;
+          height: 20px;
+          background-color: #fff;
+        }
+
+        .circle {
+          z-index: 1;
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background-color: #82b1ff;
+          border: solid 2px #ffffff;
+          border-radius: 8px;
+          top: 8px;
+          left: - 29px;
+        }
+
+        .description {
+          max-width: 15vw;
+          display: table-cell;
+          padding: 12px 16px 17px 16px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+          border: solid 1px #cfd8dc;
+          font-size: 14px;
+          letter-spacing: -0.3px;
+          color: #435b67;
+
+          .timeBlock {
+            padding: 6px 0 0 0;
+            font-size: 12px;
+            color: #a1b0b8;
+          }
+        }
+      }
+    }
+  }
+}

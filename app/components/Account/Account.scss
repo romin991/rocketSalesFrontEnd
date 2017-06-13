@@ -1,0 +1,54 @@
+.rightBlockAccount {
+  ul {
+    position: relative;
+
+    .vLine {
+      position: absolute;
+      height: 100%;
+      overflow: hidden;
+      border: 1px solid #cfd8dc;
+      border-radius: 8px;
+      left: 53px;
+    }
+  }
+
+  li {
+
+    padding: 20px 0;
+
+    .photoBlock {
+      float: left;
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      background-color: #cfd8dc;
+      text-align: center;
+      color: #fff;
+      font-size: 21px;
+
+      .fa {
+        line-height: 60px;
+      }
+    }
+
+    .textBlock {
+      vertical-align: top;
+      padding: 0 19px;
+      display: table-cell;
+
+      .nameBlock {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: -0.3px;
+        color: #364851;
+      }
+
+      .line {
+        font-size: 13px;
+        line-height: 1.38;
+        letter-spacing: -0.3px;
+        color: #4e6a78;
+      }
+    }
+  }
+}

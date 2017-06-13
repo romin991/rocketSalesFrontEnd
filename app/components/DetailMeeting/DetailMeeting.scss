@@ -1,0 +1,305 @@
+.meeting {
+  .detailMainBlock {
+    .detailMeetingBlock {
+      width: 100%;
+
+      .borderBlock {
+        border-radius: 4px;
+        border: solid 1px #cfd8dc;
+        margin: 30px 22px 20px 29px;
+
+
+        .topBlock {
+          text-align: right;
+
+          .mainInfo {
+            width: 100%;
+
+            .photo {
+              position: relative;
+              top: -10px;
+              left: -9px;
+              width: 80px;
+              height: 80px;
+              background-color: #f0f0f0;
+              border-radius: 14px;
+              box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            .namesBlock {
+              margin: 14px 20px;
+              text-align: left;
+
+              h3 {
+                font-size: 20px;
+                color: #175fc7;
+              }
+
+              h4 {
+                font-size: 14px;
+                line-height: 2.07;
+                color: #7e939e;
+
+                span {
+                  color: #2196f3;
+                }
+              }
+            }
+          }
+        }
+
+        .hLine {
+          margin: 0 12px 0 12px;
+          border-top: solid 1px #cfd8dc;
+        }
+
+        .hLine2 {
+          margin: 0 12px 0 12px;
+          border-top: solid 1px #cfd8dc;
+        }
+
+        .informationTable {
+          margin: 9px 0;
+          width: 100%;
+
+          .vLine {
+            border-left: 1px solid #eceff1;
+          }
+
+          td {
+            width: 50%;
+            vertical-align: top;
+
+            h5 {
+              padding: 9px 21px;
+              font-size: 15px;
+              line-height: 1.93;
+              color: #175fc7;
+            }
+
+            table {
+              width: 100%;
+
+              .nameData {
+                padding: 0 21px;
+                width: 40%;
+                font-size: 14px;
+                line-height: 1.71;
+                color: #7e939e;
+              }
+
+              .valueData {
+                width: 60%  ;
+                font-size: 14px;
+                line-height: 1.71;
+                color: #364851;
+              }
+            }
+
+            p {
+              padding: 9px 21px;
+              margin: 0 0 19px 0;
+              font-size: 14px;
+              line-height: 1.43;
+              color: #4e6a78;
+            }
+          }
+        }
+
+        .descriptionInfo {
+          margin: 10px 21px;
+
+          h5 {
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            line-height: 1.93;
+            color: #175fc7;
+          }
+
+          p {
+            margin: 0 0 19px 0;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #4e6a78;
+          }
+        }
+      }
+    }
+
+    .meetingResultBlock {
+      margin: 30px 20px 20px 29px;
+
+      h5 {
+        padding: 9px 0;
+        font-size: 15px;
+        line-height: 1.93;
+        color: #175fc7;
+      }
+
+      textarea {
+        width: 100%;
+        border-radius: 4px;
+        padding: 10px;
+        height: 50px;
+        background-color: #ffffff;
+        border: solid 1px #b0bec5;
+      }
+
+      .button-container {
+        text-align: right;
+
+        button {
+          height: 35px;
+          padding: 0 11px;
+          border-radius: 4px;
+          border: none;
+          background-color: #82b1ff;
+          color: #fff;
+
+          &:hover {
+            background-color: #78a4ef;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .commentsBlock {
+      margin: 0 20px 0 29px;
+      padding: 22px 0;
+      border-top: 1px solid #edeff0;
+
+      .fa {
+        color: #cfd8dc;
+        font-size: 15px;
+        float: right;
+
+        &:hover {
+          color: #a6afb3;
+          cursor: pointer;
+        }
+      }
+
+      .fa-times {
+        position: relative;
+        top: -20px;
+        right: 3px;
+      }
+
+      .fa-pencil {
+        position: relative;
+        bottom: -4px;
+        right: 3px;
+      }
+
+      .commentAvatar {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 0 rgba(255, 255, 255, 0.65);
+        background-size: cover;
+      }
+
+      .textBlock {
+        display: table-cell;
+        padding: 0 13px;
+
+        .commentation {
+          padding: 4px 0 0 0;
+          font-size: 14px;
+          color: #435b67;
+          white-space: pre-wrap;
+        }
+
+        .commentDesc {
+          padding: 7px 0;
+          font-size: 12px;
+          color: #90a4ae;
+          letter-spacing: -0.3px;
+
+          span {
+            color: #2196f3;
+            letter-spacing: -0.3px;
+          }
+        }
+      }
+    }
+
+    .addCommentsBlock {
+      margin: 0 20px 0 29px;
+      padding: 22px 0;
+      border-top: 1px solid #edeff0;
+      border-bottom: 1px solid #edeff0;
+
+      .commentAvatar {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 0 rgba(255, 255, 255, 0.65);
+      }
+
+      .inputBlock {
+        display: table;
+        padding: 0 13px;
+        width: calc(100% - 40px);
+
+        input {
+          width: 100%;
+          height: 35px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: solid 1px #b0bec5;
+        }
+      }
+
+      .buttonBlock {
+        padding: 10px 13px;
+        display: table;
+        text-align: right;
+        width: 100%;
+
+        button {
+          color: #fff;
+          border: none;
+          height: 35px;
+          padding: 0 17px;
+          border-radius: 4px;
+          background-color: #82b1ff;
+
+          &:hover {
+            background-color: #76a2ec;
+          }
+        }
+      }
+    }
+  }
+
+  .rightBlock {
+
+    .rightBlockTitle {
+      font-size: 14px;
+      line-height: 2.07;
+      color: #657d8a;
+      border-bottom: 1px solid #d8dfe2;
+
+      li {
+        display: inline-block;
+        padding: 10px;
+        border: 0;
+        background-color: transparent;
+
+        .ReactTabs__Tab--selected {
+          color: #82b1ff;
+          border-bottom: solid 2px #82b1ff;
+        }
+      }
+    }
+
+    .hLine {
+      margin: 0 10px;
+      border-top: solid 1px #cfd8dc;
+    }
+  }
+}

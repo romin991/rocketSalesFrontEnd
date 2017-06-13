@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box !important;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html, body, #root, #root > div, #root > div > div {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  min-width: 750px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.dropdown--active .dropdown__content {
+    display: block;
+}
+
+.hiddenInput {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.error {
+  color: #f93939;
+  font-size: 12px;
+}
+
+.success {
+  color: #23e01f;
+  font-size: 12px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.react-autosuggest__container {
+  position: relative;
+
+  .react-autosuggest__suggestions-container {
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+    border: solid 1px #cfd8dc;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    font-size: 14px;
+    display: none;
+    z-index: 10;
+  }
+
+  &--open {
+    .react-autosuggest__suggestions-container {
+      display: block;
+    }
+  }
+
+  .react-autosuggest__suggestion {
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #b2d7ff;
+    }
+  }
+}
+
+.react-datepicker__input-container {
+  display: block !important;
+}

@@ -1,0 +1,174 @@
+.dashboard-sidebar {
+  display: block;
+  width: 65px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #37474f, #263238);
+  overflow: hidden;
+
+  transition: width 0.3s ease 0s;
+
+  &.expanded {
+    width: 220px;
+
+    .dashboard-sidebar__navigation-icon {
+      &--dashboard {
+        background-color: #00e676;
+      }
+
+      &--leads {
+        background-color: #ffb74d;
+      }
+
+      &--account {
+        background-color: #ff7043;
+      }
+
+      &--contact {
+        background-color: #82b1ff;
+      }
+
+      &--task {
+        background-color: #7986cb;
+      }
+
+      &--meeting {
+        background-color: #00bfa5;
+      }
+
+      &--deal {
+        background-color: #dba1ff;
+      }
+    }
+  }
+
+  &__toggle-btn {
+    display: block;
+    height: 65px;
+    padding: 22px 22px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .2);
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+
+  &__logo {
+
+  }
+
+  &__navigation-menu {
+
+  }
+
+  &__navigation-item {
+
+  }
+
+  &__navigation-link {
+    display: block;
+    position: relative;
+    height: 64px;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .2);
+
+      .dashboard-sidebar__navigation-icon {
+        &--dashboard {
+          background-color: #00e676;
+        }
+
+        &--leads {
+          background-color: #ffb74d;
+        }
+
+        &--account {
+          background-color: #ff7043;
+        }
+
+        &--contact {
+          background-color: #82b1ff;
+        }
+
+        &--task {
+          background-color: #7986cb;
+        }
+
+        &--meeting {
+          background-color: #00bfa5;
+        }
+
+        &--deal {
+          background-color: #dba1ff;
+        }
+      }
+    }
+
+    &--current {
+      .dashboard-sidebar__navigation-icon {
+        &--dashboard {
+          background-color: #00e676;
+        }
+
+        &--leads {
+          background-color: #ffb74d;
+        }
+
+        &--account {
+          background-color: #ff7043;
+        }
+
+        &--contact {
+          background-color: #82b1ff;
+        }
+
+        &--task {
+          background-color: #7986cb;
+        }
+
+        &--meeting {
+          background-color: #00bfa5;
+        }
+
+        &--deal {
+          background-color: #dba1ff;
+        }
+      }
+    }
+  }
+
+  &__navigation-icon {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: transparent;
+
+    i {
+      vertical-align: middle;
+      line-height: 43px;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    svg {
+      margin-top: 9px;
+    }
+  }
+
+  &__navigation-link-name {
+    position: absolute;
+    top: 25px;
+    left: 65px;
+    font-size: 14px;
+    color: #fff;
+  }
+}

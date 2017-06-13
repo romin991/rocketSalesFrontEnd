@@ -1,0 +1,421 @@
+.deal{
+  .detailMainBlock {
+    .detailTitle {
+      .detailTitleContainer {
+        .detailTitleInputsBlock {
+          .detailTitleRight {
+            display: table-cell;
+            text-align: right;
+            padding: 0 20px 0 0;
+
+            .plusButton {
+              padding: 11px 11px 9px 11px;
+              border-radius: 4px 0 0 4px;
+              background-color: #82b1ff;
+              color: #fff;
+              font-size: 14px;
+              border: none;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            .button {
+              margin: 0 10px 0 0;
+              padding: 10px 10px 8px 11px;
+              border-radius: 0 4px 4px 0;
+              background-color: #fff;
+              color: #435b67;
+              font-size: 14px;
+              border-left: none;
+              border-top: solid 1px #cfd8dc;
+              border-right: solid 1px #cfd8dc;
+              border-bottom: solid 1px #cfd8dc;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .detailDealBlock {
+      width: 100%;
+
+      .borderBlock {
+        border-radius: 4px;
+        border: solid 1px #cfd8dc;
+        margin: 30px 22px 20px 29px;
+
+        .topBlock {
+          text-align: right;
+
+          .mainInfo {
+            width: 100%;
+
+            .photo {
+              position: relative;
+              top: -10px;
+              left: -9px;
+              width: 80px;
+              height: 80px;
+              background-color: #f0f0f0;
+              border-radius: 14px;
+              box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            .namesBlock {
+              margin: 14px 20px;
+              text-align: left;
+
+              h3 {
+                font-size: 20px;
+                color: #175fc7;
+              }
+
+              h4 {
+                font-size: 14px;
+                line-height: 2.07;
+                color: #7e939e;
+              }
+            }
+
+            .selectData {
+              text-align: right;
+              vertical-align: bottom;
+
+              button {
+                margin: 10px;
+                width: 95px;
+                border-radius: 4px;
+                background-color: #ffffff;
+                border: solid 1px #cfd8dc;
+                padding: 10px 11px 9px 10px;
+                font-size: 14px;
+                color: #435b67;
+              }
+            }
+          }
+        }
+
+        .hLine {
+          margin: 0 12px 0 12px;
+          border-top: solid 1px #cfd8dc;
+        }
+
+        .dealStatus {
+          margin: 18px 0 65px 42px;
+          line-height: 30px;
+          text-align: center;
+          color: #455a64;
+          font-size: 14px;
+          cursor: pointer;
+
+          .openDeal {
+            float: left;
+            width: 195.5px;
+            border-radius: 12px 0 0 12px;
+            height: 30px;
+            background-color: #e6f3fe;
+            border-right: 1px solid #ffffff;
+
+            .triangle-right1 {
+              position: relative;
+              top: -34px;
+              right: -189px;
+              width: 0;
+              height: 0;
+              border-top: 19px solid transparent;
+              border-left: 26px solid #fff;
+              border-bottom: 19px solid transparent;
+            }
+
+            .triangle-right2 {
+              position: relative;
+              top: -68px;
+              right: -189px;
+              width: 0;
+              height: 0;
+              border-top: 15px solid transparent;
+              border-left: 22px solid #e6f3fe;
+              border-bottom: 15px solid transparent;
+            }
+
+            &.active {
+              background-color: #4dc880;
+              color: #ffffff;
+
+              .triangle-right2 {
+                border-left: 22px solid #4dc880;
+              }
+            }
+          }
+
+          .inProgressDeal {
+            float: left;
+            width: 178px;
+            height: 30px;
+            background-color: #e6f3fe;
+
+            .triangle-right1 {
+              position: relative;
+              top: -34px;
+              right: -177px;
+              width: 0;
+              height: 0;
+              border-top: 19px solid transparent;
+              border-left: 26px solid #fff;
+              border-bottom: 19px solid transparent;
+            }
+
+            .triangle-right2 {
+              position: relative;
+              top: -68px;
+              right: -177px;
+              width: 0;
+              height: 0;
+              border-top: 15px solid transparent;
+              border-left: 22px solid #e6f3fe;
+              border-bottom: 15px solid transparent;
+            }
+
+            &.active {
+              background-color: #4dc880;
+              color: #ffffff;
+
+              .triangle-right2 {
+                border-left: 22px solid #4dc880;
+              }
+            }
+
+          }
+
+          .closedDeal {
+            float: left;
+            border-radius: 0 12px 12px 0;
+            width: 186px;
+            height: 30px;
+            background-color: #e6f3fe;
+
+            &.won {
+              background-color: #4dc880;
+              color: #ffffff;
+            }
+
+            &.lost {
+              background-color: #d44f4d;
+              color: #fff;
+            }
+          }
+        }
+
+        .hLine2 {
+          margin: 0 12px 0 12px;
+          border-top: solid 1px #cfd8dc;
+        }
+
+        .informationTable {
+          margin: 9px 0;
+          width: 100%;
+
+          .vLine {
+            border-left: 1px solid #eceff1;
+          }
+
+          td {
+            width: 50%;
+            vertical-align: top;
+
+            h5 {
+              padding: 9px 21px;
+              font-size: 15px;
+              line-height: 1.93;
+              color: #175fc7;
+            }
+
+            table {
+              width: 100%;
+
+              .nameData {
+                padding: 0 21px;
+                width: 40%;
+                font-size: 14px;
+                line-height: 1.71;
+                color: #7e939e;
+              }
+
+              .valueData {
+                width: 60%  ;
+                font-size: 14px;
+                line-height: 1.71;
+                color: #364851;
+              }
+            }
+          }
+        }
+
+        .descriptionInfo {
+          margin: 10px 21px;
+
+          h5 {
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            line-height: 1.93;
+            color: #175fc7;
+          }
+
+          p {
+            margin: 0 0 19px 0;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #4e6a78;
+          }
+        }
+      }
+    }
+
+    .detailTable {
+      width: 100%;
+
+      table {
+        width: 100%;
+
+        thead {
+          background-color: #fff;
+          border-top: 1px solid #d6dee1;
+          border-bottom: 1px solid #d6dee1;
+          color: #435b67;
+
+          tr {
+            td {
+              width: 14%;
+              padding: 15px 0 14px 24px;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            border-top: 1px solid #eceff1;
+            border-bottom: 1px solid #eceff1;
+
+            &:hover {
+              background-color: #eceff1;
+              box-shadow: 0 1px 0 0 #eceff1;
+              cursor: pointer;
+            }
+
+            td {
+              font-size: 14px;
+              color: #435b67;
+              width: 14%;
+              padding: 15px 0 14px 24px;
+
+              a {
+                color: #1e80f0;
+                text-decoration: none;
+
+                &:hover {
+                  color: #1768f0;
+                }
+              }
+            }
+          }
+
+          .greyRow {
+            background-color: #fafafa;
+          }
+
+          .whiteRow {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+    .detailTable {
+      h3 {
+        display: table-cell;
+        font-size: 17px;
+        color: #546e7a;
+        padding: 25px 0 10px 25px;
+        font-weight: bold;
+      }
+
+      .selectBlock {
+        display: table-cell;
+        text-align: right;
+        width: 100%;
+        padding: 0 22px 3px 0;
+
+        select {
+          width: 80px;
+          height: 35px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: solid 1px #cfd8dc;
+          line-height: 25px;
+          padding: 5px;
+          font-size: 14px;
+          color: #1976d2;
+        }
+      }
+
+      table {
+        thead {
+          td {
+            font-size: 14px;
+            color: #435b67;
+          }
+
+          .subjectData {
+            width: 30%;
+          }
+        }
+
+        tbody {
+          td {
+            font-size: 14px;
+            color: #435b67;
+            text-align: left;
+            padding: 15px 0 14px 24px;
+
+            a {
+              color: #1e80f0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rightBlock {
+
+    .rightBlockTitle {
+      font-size: 14px;
+      line-height: 2.07;
+      color: #657d8a;
+      border-bottom: 1px solid #d8dfe2;
+
+      li {
+        display: inline-block;
+        padding: 10px;
+        border: 0;
+        background-color: transparent;
+
+        .ReactTabs__Tab--selected {
+          color: #82b1ff;
+          border-bottom: solid 2px #82b1ff;
+        }
+      }
+    }
+
+    .hLine {
+      margin: 0 10px;
+      border-top: solid 1px #cfd8dc;
+    }
+  }
+}

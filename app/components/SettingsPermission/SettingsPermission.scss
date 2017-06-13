@@ -1,0 +1,159 @@
+.permission {
+  .mainContainer {
+    .rightBlock {
+      display: table-cell;
+      width: 80vw;
+      top: 0;
+      ul {
+        li {
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+          width: 100%;
+
+          .liLeft {
+            padding: 17px 0 15px 21px;
+            float: left;
+
+            .photoBlock {
+              text-align: center;
+              color: #fff;
+              line-height: 60px ;
+              font-size: 21px;
+              display: table-cell;
+              width: 60px;
+              height: 60px;
+              border-radius: 14px;
+              background-color: #b0bec5;
+              box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 0 rgba(255, 255, 255, 0.65);
+            }
+
+            .textBlock {
+              vertical-align: middle;
+              display: table-cell;
+              padding: 0 0 0 15px;
+
+              .name {
+                font-size: 14px;
+                line-height: 1.71;
+                color: #364851;
+              }
+
+              .email {
+                font-size: 13px;
+                line-height: 1.38;
+                color: #4e6a78;
+              }
+            }
+          }
+
+          .liRight {
+            float: right;
+            margin: 30px 0 30px 25px;
+
+            .admin {
+              line-height: 34px;
+              float: right;
+              font-size: 14px;
+              color: #7e939e;
+            }
+
+            label {
+              display: inline-block;
+              vertical-align: middle;
+            }
+
+            .checkbox {
+              cursor:pointer;
+
+              input {
+                display: none;
+
+                & + span {
+                  display: table-cell;
+                  position: relative;
+                  float: right;
+                  width: 112px;
+                  height: 34px;
+                  margin: 0 10px;
+                  background-color: #fff;
+                  border-radius: 4px;
+                  transition:all 0.2s ease-in-out;
+                  border: solid 1px #cfd8dc;
+                }
+
+                &:checked + span {
+                  background-color: #fff;
+                }
+
+                &:checked + span:before {
+                  content:'ON';
+                  left: 0;
+                  background-color: #82b1ff;
+                }
+
+                & + span:before {
+                  position: absolute;
+                  content: 'OFF';
+                  background-color: #b0bec5;
+                  right: 0;
+                  text-align: center;
+                  line-height: 34px;
+                  height: 100%;
+                  width: 56px;
+                  border-radius: 4px;
+                  transition:all 0.2s ease-in-out;
+                  color: #ffffff;
+                }
+              }
+            }
+
+            button {
+              margin: 0 10px 0 0;
+              height: 34px;
+              border-radius: 4px;
+              border: solid 1px #cfd8dc;
+              background-color: #fff;
+              padding: 0 11px 0 9px;
+              vertical-align: middle;
+
+              .fa {
+                color: #b0bec5;
+                font-size: 14px;
+              }
+
+              span {
+                padding: 0 0 0 7px;
+                font-size: 14px;
+                color: #435b67;
+              }
+
+              &:hover {
+                cursor: pointer;
+                background-color: #fafafa;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .permission {
+    .mainContainer {
+      .rightBlock {
+        ul {
+          li {
+            .liLeft {
+              float: none;
+            }
+
+            .liRight {
+              float: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
